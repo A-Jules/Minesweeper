@@ -1,0 +1,24 @@
+//
+   Created by Tony on 7/9/2017.
+doctype html
+
+html
+    head
+    body
+        #containerminesweeper
+            h4#mine-counter  00:00:00
+            h4#scoreboard 00
+            img#smiley-face.smile(src=require('./images/minesweeper.svg'))
+            mixin if-ie(condition, showInNonIeBrowser)
+                - if(showInNonIeBrowser == null) showInNonIeBrowser = condition == "!IE";
+                != "<!--[if " + condition + "]>"
+                if showInNonIeBrowser
+                    != "-->"
+                block
+                if showInNonIeBrowser
+                    != "<!--"
+                != "<![endif]-->"
+            +if-ie("IE")
+                object#minefield(classid="image/svg+xml", src=require('./images/minefield.svg'))
+            +if-ie("!IE")
+                object#minefield(data=require('./images/minefield.svg'), type='image/svg+xml')

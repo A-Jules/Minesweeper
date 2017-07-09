@@ -1,0 +1,83 @@
+
+
+#containerminesweeper {
+    background-color: #B9B9B9;
+    position: relative;
+    border-width: 5px;
+    border-style: outset;
+    width: 515px;
+    height: 625px;
+
+    #dead{
+        background: url('./../images/smileys.jpg') -1px -1px;
+        display: inline-block;
+        height: 8.16%;
+        width: 10%;
+        left: 230px;
+        top: 37.5px;
+        position: absolute;
+        background-size: 200%;
+        background-position: 99% -99%;
+    }
+
+    #cool{
+        background: url('./../images/smileys.jpg') -1px -1px;
+        display: inline-block;
+        height: 8.16%;
+        width: 10%;
+        left: 230px;
+        top: 37.5px;
+        position: absolute;
+        background-size: 200%;
+        background-position: 0 99%;
+    }
+
+    #surprised{
+        background: url('./../images/smileys.jpg') -1px -1px;
+        display: inline-block;
+        height: 8.16%;
+        width: 10%;
+        left: 230px;
+        top: 37.5px;
+        position: absolute;
+        background-size: 200%;
+        background-position: 99% 0;
+    }
+
+    #smiley-face{
+        background: url('./../images/smileys.jpg') -1px -1px;
+        display: inline-block;
+        height: 8.16%;
+        width: 10%;
+        left: 230px;
+        top: 37.5px;
+        position: absolute;
+        background-size: 200%;
+    }
+
+    #mine-counter {
+        width: 15%;
+        height: 8.16%;
+        background: black;
+        position: absolute;
+        top: 37.5px;
+        right: 8%;
+        color:red;
+    }
+    #scoreboard {
+        width: 15%;
+        height: 8.16%;
+        background: black;
+        position: absolute;
+        top: 37.5px;
+        left: 8%;
+        color:red;
+    }
+    #minefield {
+        border-style: inset;
+        position: absolute;
+        bottom: 0;
+        left: 2.5px;
+        height: 500px;
+    }
+}
